@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript | Flow | Three</title>
+</head>
+<body>
+    <script>
+
+        var player1Score = parseFloat(prompt("Player 1 Score:"));
+        var player2Score = parseFloat(prompt("Player 2 Score:"));
+
+        /*
+            Todo:
+            Prompt the players for their names.
+            Print out the name of the player with the higher score,
+            or "Tie" if there is a tie.
+        */
+        if (player1Score > player2Score) {
+            console.log('Player One Wins');
+        } else if (player1Score < player2Score) {
+            console.log('Player Two Wins');
+        } else if (player1Score === player2Score) {
+            console.log('Tie');
+        } else {
+            console.log('You didn\'t play the game');//if user doesn't input a number or nothing at all.
+        }
+
+    </script>
+</body>
+</html>
